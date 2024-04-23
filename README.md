@@ -122,4 +122,4 @@ In this task, you will need to write and run a Powershell script, which deploys 
 
 6. Make sure that changes to both `task.ps1` and `result.json` are commited to the repo, and sumbit the solution for a review.
 
-7. When solution is validated, stop the virtual machine, you deployed with the Powershell script. 
+7. When solution is validated, - delete all resources you deployed with the script, they won't be used in the next tasks.  
