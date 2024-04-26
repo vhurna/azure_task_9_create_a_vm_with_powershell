@@ -1,8 +1,8 @@
-# Create a Virtual Machine with Powershell
+# Create a Virtual Machine with PowerShell
 
-Now, when you felt the power of the Powershell, you know that you can do basically anything with it in Azure, even create a VM! Having such script would be very helpfull, because you are expecting your application to become even more popular - and it means that you will need to deploy a lot of new VMs. 
+Now, when you felt the power of the PowerShell, you know that you can do basically anything with it in Azure, even create a VM! Having such script would be very helpfull, because you are expecting your application to become even more popular - and it means that you will need to deploy a lot of new VMs. 
 
-In this task, you will implement a Powershell script, which deploys an Azure Virtual Machine to your subscription. 
+In this task, you will implement a PowerShell script, which deploys an Azure Virtual Machine to your subscription. 
 
 ## Prerequisites
 
@@ -12,9 +12,9 @@ Before completing any task in the module, make sure that you followed all the st
 
 2. Create a resource group called *"mate-resources"* in the Azure subscription.
 
-3. In the *"mate-resources"* resource group, create a storage account (any name) and a *"task-artifacts"* container.
+3. In the *"mate-resources"* resource group, create a storage account (any name) and a `task-artifacts` container.
 
-4. Install [PowerShell 7](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-7.4) on your computer. All tasks in this module use Powershell 7. To run it in the terminal, execute the following command: 
+4. Install [PowerShell 7](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-7.4) on your computer. All tasks in this module use PowerShell 7. To run it in the terminal, execute the following command: 
     ```
     pwsh
     ```
@@ -35,11 +35,11 @@ If you are a Windows user, before running this command, please also run the foll
 
 ## Requirements
 
-In this task, you will need to write and run a Powershell script, which deploys a Virtual Machine and all required resources to Azure subscription: 
+In this task, you will need to write and run a PowerShell script, which deploys a Virtual Machine and all required resources to Azure subscription: 
 
 1. Write your script code to the file 'task.ps1' in this repository:
     
-    - In the script, you should assume that you are already logged in to Azure and using the correct subscription (don't use commands 'Connect-AzAccount' and 'Set-AzContext', if needed - just run them on your computer before running the script). 
+    - In the script, you should assume that you are already logged in to Azure and using the correct subscription (don't use commands `Connect-AzAccount` and `Set-AzContext`, if needed - just run them on your computer before running the script). 
 
     - Use any region you want, for example `uksouth`. 
 
@@ -93,7 +93,7 @@ In this task, you will need to write and run a Powershell script, which deploys 
             systemctl status todoapp
         ```
 
-## How to complete tasks in this module 
+## How To Complete Tasks in This Module 
 
 Tasks in this module are relying on 2 PowerShell scripts: 
 
@@ -104,9 +104,9 @@ Here is how to complete tasks in this module:
 
 1. Clone task repository
 
-2. Make sure you completed the steps described in the Prerequisites section
+2. Make sure you completed the steps described in the **Prerequisites** section
 
-3. Complete the task, described in the Requirements section 
+3. Complete the task, described in the **Requirements** section 
 
 4. Run `scripts/generate-artifacts.ps1` to generate task artifacts. Script will update the file `artifacts.json` in this repo. 
 
@@ -114,9 +114,7 @@ Here is how to complete tasks in this module:
 
 6. When all tests will pass - commit your changes and submit the solution for a review. 
 
-Pro tip: if you stuck with any of the implementation steps - run `scripts/generate-artifacts.ps1` and `scripts/validate-artifacts.ps1`. The validation script might give you a hint on what you should do.  
-
-
+Pro tip: if you stuck with any of the implementation steps — run `scripts/generate-artifacts.ps1` and `scripts/validate-artifacts.ps1`. The validation script might give you a hint on what you should do.  
 
 4. Run artifacts generation script `scripts/generate-artifacts.ps1`
 
