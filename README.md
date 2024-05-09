@@ -1,6 +1,6 @@
 # Create a Virtual Machine with PowerShell
 
-Now, when you felt the power of the PowerShell, you know that you can do basically anything with it in Azure, even create a VM! Having such script would be very helpfull, because you are expecting your application to become even more popular — and it means that you will need to deploy a lot of new VMs. 
+Now, when you feel the power of PowerShell, you know that you can do basically anything with it in Azure, even create a VM! Having such a script would be very helpful because you are expecting your application to become even more popular, which means that you will need to deploy a lot of new VMs. 
 
 In this task, you will implement a PowerShell script, which deploys an Azure Virtual Machine to your subscription. 
 
@@ -92,7 +92,7 @@ In this task, you will need to write and run a PowerShell script, which deploys 
         ```
             systemctl status todoapp
         ```
-
+ 4. When the solution is validated, delete all resources you deployed with the script; they won't be used in the next tasks.  
 ## How To Complete Tasks in This Module 
 
 Tasks in this module are relying on 2 PowerShell scripts: 
@@ -106,20 +106,14 @@ Here is how to complete tasks in this module:
 
 2. Make sure you completed the steps described in the **Prerequisites** section
 
-3. Complete the task, described in the **Requirements** section 
+3. Complete the task described in the **Requirements** section 
 
-4. Run `scripts/generate-artifacts.ps1` to generate task artifacts. Script will update the file `artifacts.json` in this repo. 
+4. Run `scripts/generate-artifacts.ps1` to generate task artifacts. The script will update the file `artifacts.json` in this repo. 
 
-5. Run `scripts/validate-artifacts.ps1` to test yourself. If tests are failing — follow the recomendation from the test script error message to fix or re-deploy your infrastructure. When you will be ready to test yourself again — **re-generate the artifacts** (step 4) and re-run tests again. 
+5. Run `scripts/validate-artifacts.ps1` to test yourself. If tests are failing — follow the recommendation from the test script error message to fix or re-deploy your infrastructure. When you are ready to test yourself again — **re-generate the artifacts** (step 4) and re-run tests again. 
 
-6. When all tests will pass — commit your changes and submit the solution for a review. 
+6. Make sure that changes to both `task.ps1` and `result.json` are committed to the repo, and submit the solution for review.
 
-Pro tip: if you stuck with any of the implementation steps — run `scripts/generate-artifacts.ps1` and `scripts/validate-artifacts.ps1`. The validation script might give you a hint on what you should do.  
+Pro tip: If you are stuck with any of the implementation steps, run `scripts/generate-artifacts.ps1` and `scripts/validate-artifacts.ps1`. The validation script might give you a hint on what to do.  
 
-4. Run artifacts generation script `scripts/generate-artifacts.ps1`
-
-5. Test yourself using the script `scripts/validate-artifacts.ps1`
-
-6. Make sure that changes to both `task.ps1` and `result.json` are commited to the repo, and sumbit the solution for a review.
-
-7. When solution is validated, — delete all resources you deployed with the script, they won't be used in the next tasks.  
+7. When the solution is validated, delete all resources you deployed with the script; they won't be used in the next tasks.  
